@@ -1,0 +1,69 @@
+input {
+    width: 100px;
+    transition: all 0.5ms;
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin: 10px;
+    text-align:start;
+    color: black;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 100px;
+    transition: all 0.5ms;
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.input-env {
+    @extend input;
+    width: 100px;
+    transition: all 0.5ms;
+
+    &:focus {
+        width: 130px;
+        transition: all 0.5ms;
+        font-size: 1.1rem;
+        background-color: map-get($estilos,colorVerde );
+    }
+
+}
+
+
+.text-area-Encar{
+    @extend textarea;
+    
+    width: 250px;
+    height: 250px;
+    text-align:start;
+    transition: all 0.5ms;
+
+    &:focus{
+        width: 400px;
+        font: size 1.3rem;
+
+    }
+}
+
+.text-area-rellen{
+    @extend textarea;
+    
+    text-align:start;
+    transition: all 0.5ms;
+
+    &:focus{
+        width: 230px;
+        font: size 1.3rem;
+
+    }
+}

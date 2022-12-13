@@ -1,0 +1,30 @@
+@import "maps";
+@mixin estiloFuente($color, $fuente, $alineacion){
+    color:$color;
+    font-style:$fuente;
+    text-align:$alineacion;
+}
+// USAR MIXIN CON PARAMETRO
+h1{
+    @include estiloFuente(map-get($estilos,ColorBlan), map-get($fuentes,TnR) , map-get($estilos,alineado));
+}
+
+
+
+h2 {
+    @include estiloFuente(map-get($estilos,ColorBlan), map-get($fuentes,TnR) , map-get($estilos,alineado));
+}
+
+h3 {
+    @include estiloFuente(map-get($estilos,ColorBlan), map-get($fuentes,TnR) , map-get($estilos,alineado));
+}
+
+h4 {
+    @include estiloFuente(map-get($estilos,Colorneg), map-get($fuentes,ita) , map-get($estilos,alineado));
+}
+
+p {
+    color: map-get($estilos,ColorBlan );
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
