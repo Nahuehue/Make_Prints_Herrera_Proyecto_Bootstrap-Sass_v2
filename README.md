@@ -1,4 +1,4 @@
-Hola buenas tardes/noches/dias 
+Hola buenas tardes o noches o dias 
 
 este repsoitorio de git es el que voy a utilizar en mi proyecto con la implementacion de BootsTrap y Sass
 
